@@ -1,0 +1,1 @@
+package com.mmall.service;import org.springframework.web.multipart.MultipartFile;import java.io.IOException;/** * @author chenqiang * @create 2020-07-01 17:18 */public interface IFileService {    String upload(MultipartFile file,String path);}
