@@ -28,7 +28,7 @@ public class JsonUtil {
 
     static {
         //对象所有字段全部列入
-        objectMapper.setSerializationInclusion(Inclusion.ALWAYS);
+        objectMapper.setSerializationInclusion(Inclusion.NON_NULL);
         //取消默认转化timestamps形式
         objectMapper.configure(SerializationConfig.Feature.WRITE_DATE_KEYS_AS_TIMESTAMPS, false);
         //忽略空bean转json的错误
